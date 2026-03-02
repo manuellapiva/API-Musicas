@@ -57,10 +57,6 @@ app.get("/musicas/nome/:nomeid", (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-  console.log(`🚀 Servidor rodando em http://localhost:3000`);
-});
-
 app.put("/musicas/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const { nomemusica, autor, link } = req.body;
