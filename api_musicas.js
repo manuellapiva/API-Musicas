@@ -53,7 +53,7 @@ app.get("/musicas/nome/:nomeid", (req, res) => {
     if (nomeID) {
         res.status(200).json(nomeID);
     } else {
-        res.status(404).json({ msg: "Música não encontrada" });
+        res.status(404).json({msg: "Música não encontrada"});
     }
 });
 
