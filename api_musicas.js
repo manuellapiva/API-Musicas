@@ -59,7 +59,6 @@ app.get("/musicas/nome/:nomeid", (req, res) => {
 
 app.post("/musicas", (req, res) => {
     const {nomemusica, autor, link} = req.body;
-
     if (!nomemusica || !autor || !link) {
         return res.status(400).json({ msg: "Dados Incompletos" });
     }
