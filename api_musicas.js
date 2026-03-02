@@ -32,6 +32,10 @@ let musicas = [
 
 let proximoId = 5
 
+app.get("/musicas", (req, res) => {
+    res.status(200).json(musicas);
+});
+
 app.put("/musicas/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const {nomemusica, autor, link} = req.body;
