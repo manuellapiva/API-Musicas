@@ -66,9 +66,7 @@ app.put("/musicas/:id", (req, res) => {
       mensagem: "Todos os campos são obrigatórios",
     });
   }
-
   const index = musicas.findIndex((p) => p.id === id);
-
   if (index !== -1) {
     musicas[index] = {
       id,
