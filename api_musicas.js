@@ -84,6 +84,22 @@ app.put("/musicas/:id", (req, res) => {
   }
 });
 
+app.delete("/produtos/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const index = produtos.findIndex((p) => p.id === id);
+
+    if (index !== -1) {
+        produtos.splice(index, 1);
+        res.status(200).json({
+            mensagem: `Produto ${id} removido com sucesso`,
+        });
+    } else {
+        res.status(404).json({
+            mensagem: `Produto ${id} não encontrado`,
+        });
+    }
+});
+
 app.listen(3000, () => {
   console.log(`Servidor rodando em http://localhost:3000`);
 });
