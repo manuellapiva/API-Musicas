@@ -36,6 +36,17 @@ app.get("/musicas", (req, res) => {
     res.status(200).json(musicas);
 });
 
+app.get("/musicas/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const musica = musicas.find((p) => p.id === id);
+
+    if (musica) {
+        res.status(200).json(musica);
+    } else {
+        res.status(404).json({ msg: "Música não encontrada" });
+    }
+});
+
 app.put("/musicas/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const {nomemusica, autor, link} = req.body;
