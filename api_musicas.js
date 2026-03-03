@@ -100,18 +100,18 @@ app.put("/musicas/:id", (req, res) => {
   }
 });
 
-app.delete("/produtos/:id", (req, res) => {
+app.delete("/musicas/:id", (req, res) => {
     const id = parseInt(req.params.id);
-    const index = produtos.findIndex((p) => p.id === id);
+    const index = musicas.findIndex((p) => p.id === id);
 
     if (index !== -1) {
-        produtos.splice(index, 1);
+        musicas.splice(index, 1);
         res.status(200).json({
-            mensagem: `Produto ${id} removido com sucesso`,
+            mensagem: `Música ${id} removida com sucesso`,
         });
     } else {
         res.status(404).json({
-            mensagem: `Produto ${id} não encontrado`,
+            mensagem: `Música ${id} não encontrada`,
         });
     }
 });
