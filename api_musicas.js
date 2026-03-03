@@ -8,25 +8,25 @@ let musicas = [
     id: 1,
     nomemusica: "Pay no Rent",
     autor: "Turnpike Troubadours",
-    link: "https://www.youtube.com/watch?v=sieOSRVQh3Q&quot",
+    link: "https://www.youtube.com/watch?v=sieOSRVQh3Q&quot"
   },
   {
     id: 2,
     nomemusica: "The Cowboy in Me",
     autor: "Tim McGraw",
-    link: "https://www.youtube.com/watch?v=9ECKaPrAGds&quot",
+    link: "https://www.youtube.com/watch?v=9ECKaPrAGds&quot"
   },
   {
     id: 3,
     nomemusica: "Chasing Tornadoes",
     autor: "MacKenzie Porter",
-    link: "https://www.youtube.com/watch?v=xJX4jAEpsp0&quot",
+    link: "https://www.youtube.com/watch?v=xJX4jAEpsp0&quot"
   },
   {
     id: 4,
     nomemusica: "Heaven's Gate",
     autor: "Kevin Coster",
-    link: "https://www.youtube.com/watch?v=YMsa8nGF9VQ&quot",
+    link: "https://www.youtube.com/watch?v=YMsa8nGF9VQ&quot"
   },
 ];
 
