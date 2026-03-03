@@ -49,7 +49,7 @@ app.get("/musicas/:id", (req, res) => {
 
 app.get("/musicas/nome/:nomeid", (req, res) => {
     const nome = req.params.nomeid.toLowerCase();
-    const nomeID = musicas.find((n) => n.nome.toLowerCase() === nome);
+    const nomeID = musicas.find((n) => n.nomemusica.toLowerCase() === nome);
     if (nomeID) {
         res.status(200).json(nomeID);
     } else {
