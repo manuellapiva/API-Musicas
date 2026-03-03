@@ -116,6 +116,6 @@ app.delete("/musicas/:id", (req, res) => {
     }
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:3000`);
 });
